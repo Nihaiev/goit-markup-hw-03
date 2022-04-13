@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css
+">
     <title>WebStudio</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -51,11 +53,13 @@
     <main>
       <!-- секция баннера -->
       <section class="banner">
-        <h1 class="banner-text">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="banner-title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="btn btn-text">Заказать услугу</button>
+        
       </section>
       <!-- секция особенности -->
       <section class="feature">
+        <div class="container">
         <h2 hidden>Feature</h2>
         <ul class="list">
           <li>
@@ -90,6 +94,7 @@
       </section>
       <!-- секция чем мы занимаемся -->
       <section class="about">
+        <div class="container">
         <h2 class="about-title">Чем мы занимаемся</h2>
         <ul class="list">
           <li>
@@ -106,9 +111,11 @@
             />
           </li>
         </ul>
+        </div>
       </section>
       <!-- team section -->
       <section class="team">
+        <div class="container">
         <h2 class="team-title">Наша команда</h2>
         <ul class="list">
           <li class="team-content">
@@ -132,10 +139,12 @@
             <p class="team-text" lang="en">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!-- footer -->
     <footer class="footer">
+      <div class="container">
       <a href="./index.html" lang="en" class="footer-logo link"
         ><span class="logo-multicolor">Web</span>Studio</a
       >
@@ -154,6 +163,7 @@
           </li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>
