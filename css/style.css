@@ -47,11 +47,15 @@ ul{
 
 
 .container{
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
     /* outline: 1px solid purple;   */
+}
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* --HEADER-- */
@@ -158,7 +162,7 @@ ul{
     width: 696px;
     font-size: 44px;
     line-height: 1.36;  
-    margin-bottom: 30px;
+    margin-bottom: var(--typical-margin);
     margin-left: auto;
     margin-right: auto;
     letter-spacing: 0.06em;
@@ -222,11 +226,9 @@ ul{
 }
 .feature-list{
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 .feature-item:not(:last-child){
-    margin-right:30px ;
+    margin-right: var(--typical-margin);
 }
 .feature-title{
     font-size: 14px;
@@ -259,10 +261,9 @@ ul{
 }
 .about-list{
     display: flex;
-    padding-bottom: 94px;
 }
 .about-item:not(:last-child){
-    margin-right: 30px ;
+    margin-right: var(--typical-margin) ;
 }
 
 /* --TEAM */
@@ -278,7 +279,7 @@ ul{
 }
 .team-list{
     display: flex;
-    padding-bottom: 94px
+
 }
 .team-title {
     font-size: 36px;
@@ -287,7 +288,6 @@ ul{
     letter-spacing: 0.03em;
     color: var(--title-color);
     margin: 0;
-    padding-top: 94px;
     margin-bottom: 50px;
 
     
@@ -302,12 +302,12 @@ ul{
 }
 
 .team-item:not(:last-child){
-    margin-right: 30px;
+    margin-right: var(--typical-margin);
 
 }
 
 .team-img{
-    margin-bottom: 30px;
+    padding-bottom: var(--typical-margin);
 }
 
 .team-subtitle{
@@ -324,12 +324,11 @@ ul{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--team-text-color);
-    margin-bottom: 30px;
+    margin-bottom: var(--typical-margin);
 }
 
 /* --filtr-- */
 .filtr{
-    padding-top: 94px;
     padding-bottom: 34px;
     display: flex;
     justify-content: center;
@@ -387,18 +386,24 @@ ul{
 .portfolio{
     display: flex;
     flex-wrap: wrap;
+    width: 1170px;
 }
 .portfolio-item{
     display: block;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-right: var(--typical-margin);
+    margin-bottom: var(--typical-margin);
 }
+.portfolio-item:nth-child(3n) {
+    margin-right: 0;
+}
+.portfolio-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
 .portfolio-img{
     display: block;
 }
-.portfolio-item:nth-child(3n){
-    margin-right: 0;
-}
+
 .portfolio-border{
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
