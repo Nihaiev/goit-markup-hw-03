@@ -144,15 +144,17 @@ ul{
 .banner{
     background: var(--banner-background-color);
     text-align: center;
-    
+
 }
 
+.banner-container{
+    
+}
 
 .banner-title{
     width: 696px;
     font-size: 44px;
     line-height: 1.36;  
-    padding-top: 200px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -160,6 +162,9 @@ ul{
     text-transform: uppercase;
     color: var(--banner-text-color);
 
+}
+.banner-title .width-title{
+    width: 696px;
 }
 
 .btn{
@@ -169,7 +174,6 @@ ul{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 200px;
 
 }
 
