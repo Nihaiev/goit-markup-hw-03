@@ -51,7 +51,6 @@ ul{
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
-    /* outline: 1px solid purple;   */
 }
 .section{
     padding-top: 94px;
@@ -76,8 +75,9 @@ ul{
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--header-logo-color);
+    margin-right: 93px;
     padding-top: 24px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
 
 }
 
@@ -87,7 +87,7 @@ ul{
 
 .nav-list{
     display: flex;
-    margin-left: 93px;
+    margin-right: 331px;
 }
 
 .header-nav{
@@ -96,7 +96,12 @@ ul{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--header-logo-color);
+
     
+}
+.activenav{
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .header-nav:not(:last-child)  {
     margin-right: 50px;
@@ -123,7 +128,7 @@ ul{
 
 .contact-section{
     display: flex;
-    margin-left: auto;
+
 }
 
 .header-contact{
@@ -133,6 +138,8 @@ ul{
     letter-spacing: 0.02em;
     color: var(--header-contact-color);
     display: block;
+    padding-top: 34px;
+    padding-bottom: 34px;
 }
 .contact-list:not(:last-child) {
     margin-right: 50px;
@@ -151,12 +158,10 @@ ul{
     background: var(--banner-background-color);
     text-align: center;
     display: flex;
-}
-
-.banner-container{
     padding-top: 200px;
     padding-bottom: 200px;
 }
+
 
 .banner-title{
     width: 696px;
@@ -185,13 +190,13 @@ ul{
 .btn:hover{
     background: var(--btn-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+
 }
 
 .btn:focus {
     background: var(--btn-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+
 }
 
 .btn-text{
@@ -209,7 +214,6 @@ ul{
 /* --FEATURE-- */
 .feature{
     background: var(--feature-background-color);
-    padding-top: 94px;
 
 
 }
@@ -251,6 +255,8 @@ ul{
 .about{
     background-color: var(--about-background-color);
     display: flex;
+    padding-bottom: 94px;
+
 }
 .about-title{
     font-size: 36px;
@@ -280,12 +286,14 @@ ul{
 
 }
 
-.team-content{
-    background: var(--team-content-color);  
+/* .team-content{
+    background: var(--team-content-color);
+    
 
-}
+} */
 .team-list{
     display: flex;
+    
 
 }
 .team-title {
@@ -296,16 +304,18 @@ ul{
     color: var(--title-color);
     margin: 0;
     margin-bottom: 50px;
-
+    
     
 
 }
 .team-item{
+    display: flex;
+    flex-direction: column;
     background: #FFFFFF;    
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4p
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item:not(:last-child){
@@ -314,10 +324,14 @@ ul{
 }
 
 .team-img{
-    padding-bottom: var(--typical-margin);
+    /* padding-bottom: var(--typical-margin); */
     display: block;
     max-width: 100%;
     height: auto;
+}
+.team-border{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-subtitle{
@@ -334,22 +348,24 @@ ul{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--team-text-color);
-    margin-bottom: var(--typical-margin);
+    /* margin-bottom: var(--typical-margin); */
 }
 
 /* --filtr-- */
 .filtr{
-    padding-bottom: 34px;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
-
+.filtr-btn-list{
+    margin-right: 8px;
+}
 .filtr-btn{
     background: var(--filter-btn-background);
     border-radius: 4px;
     cursor: pointer;
-    margin-right: 8px;
     border-color: transparent;
+    padding: 6px 22px 6px 22px;
 }
 .filtr-btn-text {
     font-family: inherit;
@@ -360,7 +376,7 @@ ul{
     letter-spacing: 0.03em;
     color: var(--filter-btn-text);
 }
-.filtr-btn .currentbtn {
+.currentbtn {
     background: var(--btn-hover);
     color: var(--filter-btn-texthover);
 }
@@ -440,6 +456,8 @@ ul{
 /* --FOOTER-- */
 .footer{
     background: var(--footer-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     
 }
@@ -451,7 +469,6 @@ ul{
     color: var(--footer-text-color);
     margin-bottom: 20px;
     display: block;
-    padding-top: 60px;
     
 }
 
@@ -461,7 +478,6 @@ ul{
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--footer-text-color);
-    padding-bottom: 60px;
     
 }
 .address-list:not(:last-child){
