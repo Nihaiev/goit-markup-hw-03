@@ -102,6 +102,7 @@ ul{
 .activenav{
     padding-top: 32px;
     padding-bottom: 32px;
+    display: block;
 }
 .header-nav:not(:last-child)  {
     margin-right: 50px;
@@ -184,6 +185,7 @@ ul{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    border: none;
 
 }
 
